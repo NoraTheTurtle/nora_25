@@ -1,6 +1,6 @@
 ---
 layout: base
-title: Student Home 
+title: Nora's Homepage :3
 description: Home Page
 hide: true
 ---
