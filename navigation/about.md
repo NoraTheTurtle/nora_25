@@ -18,4 +18,4 @@ my Favorite movie is Coroline!
 
 ![coroline]({{site.baseurl}}/images/coroline.webp)
 
-### And im supper excited to learn more about coding through CSP!
+### I took CSSE last year and im supper excited to learn more about coding through CSP this year!
