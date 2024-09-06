@@ -31,7 +31,7 @@ body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  color: $body-text-color;
+  color: #9760c7;
 }
 
 #skip-to-content {
@@ -109,7 +109,7 @@ a {
   color: $header-heading-color;
   text-align: center;
   background-color: $header-bg-color;
-  background-image: linear-gradient(120deg, $header-bg-color-secondary, $header-bg-color);
+  background-image: linear-gradient(rgb(251, 234, 48), rgba(240, 79, 213, 0.807));
 
   @include large {
     padding: 5rem 6rem;
@@ -210,7 +210,7 @@ a {
     margin-top: 2rem;
     margin-bottom: 1rem;
     font-weight: normal;
-    color: $section-headings-color;
+    color: #ff6eb6;
   }
 
   p {
