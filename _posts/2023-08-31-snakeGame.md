@@ -67,7 +67,7 @@ courses: { compsci: {week: 3} }
     }
 
     #setting input:checked + label{
-        background-color: #57ff8f;
+        background-color: #f542c5;
         color: #FFFFFF;
     }
 </style>
@@ -80,13 +80,13 @@ courses: { compsci: {week: 3} }
     <div class="container bg-secondary" style="text-align:center;">
         <!-- Main Menu -->
         <div id="menu" class="py-4 text-light">
-            <p>Welcome to Snake, press  <span style="background-color: #FFFFFF; color: #FFFFFF">space</span> to begin</p>
+            <p>Welcome to Snake, press  <span style="background-color: #ff5ed4; color: #ffffff">space</span> to begin</p>
             <a id="new_game" class="link-alert">new game</a>
             <a id="setting_menu" class="link-alert">settings</a>
         </div>
         <!-- Game Over -->
         <div id="gameover" class="py-4 text-light">
-            <p>Game Over, press <span style="background-color: #FFFFFF; color: #FFFFFF">space</span> to try again</p>
+            <p>Game Over, press <span style="background-color: #ff5ed4; color: #ffffff">space</span> to try again</p>
             <a id="new_game1" class="link-alert">new game</a>
             <a id="setting_menu1" class="link-alert">settings</a>
         </div>
@@ -94,7 +94,7 @@ courses: { compsci: {week: 3} }
         <canvas id="snake" class="wrap" width="320" height="320" tabindex="1"></canvas>
         <!-- Settings Screen -->
         <div id="setting" class="py-4 text-light">
-            <p>Settings Screen, press <span style="background-color: #4aff7d; color: #FFFFFF">space</span> to go back to playing</p>
+            <p>Settings Screen, press <span style="background-color: #edc43b; color: #FFFFFF">space</span> to go back to playing</p>
             <a id="new_game2" class="link-alert">new game</a>
             <br>
             <p>Speed:
@@ -272,7 +272,7 @@ courses: { compsci: {week: 3} }
             }
             // Repaint canvas
             ctx.beginPath();
-            ctx.fillStyle = "DarkGreen";
+            ctx.fillStyle = "#ff6bce";
             ctx.fillRect(0, 0, canvas.width, canvas.height);
             // Paint snake
             for(let i = 0; i < snake.length; i++){
@@ -378,8 +378,8 @@ courses: { compsci: {week: 3} }
         /////////////////////////////////////////////////////////////
         let setWall = function(wall_value){
             wall = wall_value;
-            if(wall === 0){screen_snake.style.borderColor = "#2edb5f";}
-            if(wall === 1){screen_snake.style.borderColor = "#2edb5f";}
+            if(wall === 0){screen_snake.style.borderColor = "#fcdd3f";}
+            if(wall === 1){screen_snake.style.borderColor = "#fcdd3f";}
         }
     })();
 </script>
