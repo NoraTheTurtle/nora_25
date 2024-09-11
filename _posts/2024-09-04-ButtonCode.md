@@ -3,7 +3,7 @@ layout: post
 title: Button!
 description: 
 courses: {compsci: {week: 3 }}
-type: hacks
+type: tangibles
 toc: false
 ---
 

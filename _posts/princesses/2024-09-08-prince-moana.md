@@ -11,13 +11,13 @@ Moana!
 
 ![image of Moana]({{site.baseurl}}/images/princesses/moana.png)
 
-## Movie: Moana (2016)
+**Movie**: Moana (2016)
 <br>
 
-## Country of Origin: Polynesia
+**Country of Origin**: Polynesia
 <br>
 
-## Movie Length: 1:43
+**Movie Length**: 1:43
 
 <script>
     var moana_facts = [

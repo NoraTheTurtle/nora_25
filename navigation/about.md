@@ -20,4 +20,8 @@ my Favorite movie is Coroline!
 
 ![coroline]({{site.baseurl}}/images/coroline.webp)
 
+and here is a photo of me with my sister <3
+
+![Sister&I]({{site.baseurl}}/images/sister.jpg)
+
 ### I took CSSE last year and im supper excited to learn more about coding through CSP this year!
