@@ -5,7 +5,7 @@ layout: post
 title: Snake Game!
 description: The game with the snake that eats apples
 type: tangibles
-courses: { compsci: {week: 3} }
+courses: { compsci: {week: 0} }
 ---
 
 <style>

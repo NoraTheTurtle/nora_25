@@ -4,7 +4,7 @@ comments: true
 hide: true
 layout: post
 description: sheet with sprites!
-courses: { compsci: {week: 3} }
+courses: { compsci: {week: 0} }
 type: tangibles
 ---
 

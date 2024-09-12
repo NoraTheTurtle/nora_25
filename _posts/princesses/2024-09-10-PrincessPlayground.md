@@ -16,3 +16,5 @@ hide: true
 <br>
 
 ![Disney Princess banner]({{site.baseurl}}/images/princesses/princesses.jpg)
+
+<!-- adding disney princess poll -->
