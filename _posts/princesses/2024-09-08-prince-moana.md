@@ -7,9 +7,9 @@ permalink: /princess/moana
 
 {% include nav_princess.html %}
 
-Moana!
+### Moana!
 
-![image of Moana]({{site.baseurl}}/images/princesses/moana.png)
+<img src="{{site.baseurl}}/images/princesses/moana.png" alt="moana" width="450" height="250">
 
 **Movie**: Moana (2016)
 <br>
@@ -18,6 +18,9 @@ Moana!
 <br>
 
 **Movie Length**: 1:43
+
+<p><h2>Click here to learn more about moana!</h2></p>
+<button><a href="https://princess.disney.com/moana">Click here!!</a></button>
 
 <script>
     var moana_facts = [
