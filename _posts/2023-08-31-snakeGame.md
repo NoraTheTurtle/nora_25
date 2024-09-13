@@ -4,8 +4,8 @@ comments: false
 layout: post
 title: Snake Game!
 description: The game with the snake that eats apples
-type: tangibles
-courses: { compsci: {week: 0} }
+type: hacks
+courses: { compsci: {week: 4} }
 ---
 
 <style>
