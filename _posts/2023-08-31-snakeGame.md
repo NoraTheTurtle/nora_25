@@ -6,6 +6,7 @@ title: Snake Game!
 description: The game with the snake that eats apples
 type: hacks
 courses: { compsci: {week: 4} }
+comments: on
 ---
 
 <style>
