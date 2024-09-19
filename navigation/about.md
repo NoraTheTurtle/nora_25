@@ -1,7 +1,6 @@
 ---
 layout: page
 title: About
-comments: true
 permalink: /about/
 ---
 ### My name is Nora Ahadian, I am a softmore taking CSP this year
@@ -27,11 +26,3 @@ and here is a photo of me with my sister <3
 
 ### I took CSSE last year and im supper excited to learn more about coding through CSP this year!
 
-<script src="https://utteranc.es/client.js"
-        repo="{{ site.github_username }}/{{ site.github_repo | default: site.baseurl remove: "/" }}"
-        issue-term="title"
-        label="blogpost-comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>
