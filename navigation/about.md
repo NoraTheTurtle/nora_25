@@ -2,6 +2,7 @@
 layout: page
 title: About
 permalink: /about/
+comments: true
 ---
 ### My name is Nora Ahadian, I am a softmore taking CSP this year
 
