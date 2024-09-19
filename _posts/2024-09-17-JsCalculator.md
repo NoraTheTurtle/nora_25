@@ -1,47 +1,130 @@
 ---
 title: JS Calculator
 comments: true
-hide: true
-layout: default
+layout: post
 type: hacks
 description: calculator to find sum of diffrent numbers!
-courses: { compsci: {week: 5} }
+courses: { compsci: {week: 4} }
 ---
-<!--
-Hack 0: Right justify result
-Hack 1: Test conditions on small, big, and decimal numbers, report on findings. Fix issues.
-Hack 2: Add the common math operation that is missing from calculator
-Hack 3: Implement 1 number operation (ie SQRT)
+
+<!-- 
+Hack 0: Right justify the result
+Hack 1: Test conditions on small, big, and decimal numbers, and report on findings. Fix issues.
+Hack 2: Add the common math operation that is missing from the calculator
+Hack 3: Implement 1 number operation (ie SQRT) 
 -->
-<!--
-HTML implementation of the calculator.
+
+<!-- 
+HTML implementation of the calculator. 
 -->
-<!--
+
+<!-- 
     Style and Action are aligned with HRML class definitions
-    style.css contains majority of style definition (number, operation, clear, and equals)
-    - The div calculator-container sets 4 elements to a row
-    Background is credited to Vanta JS and is implemented at bottom of this page
+    style.css contains the majority of style definitions (number, operation, clear, and equals)
+    - The div calculator container sets 4 elements to a row
+    The background is credited to Vanta JS and is implemented at the bottom of this page
 -->
 <style>
+.calc-button,.calculator-number,.calculator-operation {
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    background-color: #282d8a;
+    border: 3px solid #000;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: span 1;
+    grid-row: span 1;
+    transition: all 0.5s
+}
+
+.calc-button:hover,.calculator-number:hover,.calculator-operation:hover {
+    background-color: #483d8b
+}
+
+.calculator-container {
+    width: 90vw;
+    height: 80vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0.5fr repeat(4, 1fr);
+    gap: 10px 10px
+}
+
+@media (min-width: 600px) {
+    .calculator-container {
+        width:40vw;
+        height: 80vh
+    }
+}
+
+.calculator-clear {
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    background-color: pink;
+    border: 3px solid #000;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: span 1;
+    grid-row: span 1;
+    transition: all 0.5s
+}
+
+.calculator-clear:hover {
+    background-color: #faa2c4
+}
+
+.calculator-equals {
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    background-color: #f2eb5a;
+    border: 3px solid #000;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: span 1;
+    grid-row: span 1;
+    transition: all 0.5s
+}
+
+.calculator-equals:hover {
+    background-color: #c2bc3c
+}
+
   .calculator-output {
-    /* calulator output
-      top bar shows the results of the calculator;
+    /*
+      calculator output
+      the top bar shows the results of the calculator;
       result to take up the entirety of the first row;
       span defines 4 columns and 1 row
     */
     grid-column: span 4;
     grid-row: span 1;
+  
     border-radius: 10px;
     padding: 0.25em;
     font-size: 20px;
     border: 5px solid black;
+  
     display: flex;
     align-items: center;
   }
+  canvas {
+    filter: none;
+  }
 </style>
+
 <!-- Add a container for the animation -->
 <div id="animation">
-  <div class="calculator-container row">
+  <div class="calculator-container">
       <!--result-->
       <div class="calculator-output" id="output">0</div>
       <!--row 1-->
@@ -60,31 +143,33 @@ HTML implementation of the calculator.
       <div class="calculator-number">9</div>
       <div class="calculator-operation">*</div>
       <!--row 4-->
-      <div class="calculator-operation">/</div>
       <div class="calculator-clear">A/C</div>
       <div class="calculator-number">0</div>
       <div class="calculator-number">.</div>
       <div class="calculator-equals">=</div>
   </div>
 </div>
+
 <!-- JavaScript (JS) implementation of the calculator. -->
 <script>
 // initialize important variables to manage calculations
 var firstNumber = null;
 var operator = null;
 var nextReady = true;
-// build objects containing key elements
+//Build objects containing key elements
 const output = document.getElementById("output");
 const numbers = document.querySelectorAll(".calculator-number");
 const operations = document.querySelectorAll(".calculator-operation");
 const clear = document.querySelectorAll(".calculator-clear");
 const equals = document.querySelectorAll(".calculator-equals");
+
 // Number buttons listener
 numbers.forEach(button => {
   button.addEventListener("click", function() {
     number(button.textContent);
   });
 });
+
 // Number action
 function number (value) { // function to input numbers into the calculator
     if (value != ".") {
@@ -103,12 +188,14 @@ function number (value) { // function to input numbers into the calculator
         }
     }
 }
+
 // Operation buttons listener
 operations.forEach(button => {
   button.addEventListener("click", function() {
     operation(button.textContent);
   });
 });
+
 // Operator action
 function operation (choice) { // function to input operations into the calculator
     if (firstNumber == null) { // once the operation is chosen, the displayed number is stored into the variable firstNumber
@@ -118,11 +205,12 @@ function operation (choice) { // function to input operations into the calculato
         return; // exits function
     }
     // occurs if there is already a number stored in the calculator
-    firstNumber = calculate(firstNumber, parseFloat(output.innerHTML));
+    firstNumber = calculate(firstNumber, parseFloat(output.innerHTML)); 
     operator = choice;
     output.innerHTML = firstNumber.toString();
     nextReady = true;
 }
+
 // Calculator
 function calculate (first, second) { // function to calculate the result of the equation
     let result = 0;
@@ -139,64 +227,50 @@ function calculate (first, second) { // function to calculate the result of the 
         case "/":
             result = first / second;
             break;
-        default:
+        default: 
             break;
     }
     return result;
 }
+
 // Equals button listener
 equals.forEach(button => {
   button.addEventListener("click", function() {
     equal();
   });
 });
+
 // Equal action
 function equal () { // function used when the equals button is clicked; calculates equation and displays it
     firstNumber = calculate(firstNumber, parseFloat(output.innerHTML));
     output.innerHTML = firstNumber.toString();
     nextReady = true;
 }
+
 // Clear button listener
 clear.forEach(button => {
   button.addEventListener("click", function() {
     clearCalc();
   });
 });
+
 // A/C action
 function clearCalc () { // clears calculator
     firstNumber = null;
     output.innerHTML = "0";
     nextReady = true;
 }
-// Division button listener
-const divisionButton = document.querySelector(".calculator-operation"); divisionButton.addEventListener("click", function() { operation("/"); });
-// Divide action
-function divide() {
-    if (firstNumber == null) {
-      firstNumber = parseFloat(output.innerHTML);
-      nextReady = true;
-      operator = "/";
-      return;
-      }
-    if (parseFloat(output.innerHTML) === 0) {
-      alert("Cannot divide by zero!");
-      clearCalc();
-      return;
-      }
-    firstNumber = calculate(firstNumber, parseFloat(output.innerHTML));
-    operator = "/";
-    output.innerHTML = firstNumber.toString();
-    nextReady = true;
-    }
 </script>
-<!--
+
+<!-- 
 Vanta animations just for fun, load JS onto the page
 -->
-<script src="/teacher/assets/js/three.r119.min.js"></script>
-<script src="/teacher/assets/js/vanta.halo.min.js"></script>
-<script src="/teacher/assets/js/vanta.birds.min.js"></script>
-<script src="/teacher/assets/js/vanta.net.min.js"></script>
-<script src="/teacher/assets/js/vanta.rings.min.js"></script>
+<script src="{{site.baseurl}}/assets/js/three.r119.min.js"></script>
+<script src="{{site.baseurl}}/assets/js/vanta.halo.min.js"></script>
+<script src="{{site.baseurl}}/assets/js/vanta.birds.min.js"></script>
+<script src="{{site.baseurl}}/assets/js/vanta.net.min.js"></script>
+<script src="{{site.baseurl}}/assets/js/vanta.rings.min.js"></script>
+
 <script>
 // setup vanta scripts as functions
 var vantaInstances = {
@@ -205,9 +279,11 @@ var vantaInstances = {
   net: VANTA.NET,
   rings: VANTA.RINGS
 };
+
 // obtain a random vanta function
 var vantaInstance = vantaInstances[Object.keys(vantaInstances)[Math.floor(Math.random() * Object.keys(vantaInstances).length)]];
-// run the animation
+
+//Run the animation
 vantaInstance({
   el: "#animation",
   mouseControls: true,
