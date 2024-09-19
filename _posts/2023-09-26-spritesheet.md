@@ -6,6 +6,7 @@ layout: post
 description: sheet with sprites!
 courses: { compsci: {week: 0} }
 type: tangibles
+comments: true
 ---
 
 <body>
@@ -148,4 +149,12 @@ type: tangibles
         // run 1st animate
         animate();
     });
+</script>
+
+<script src="https://utteranc.es/client.js"
+        repo="NoraTheTurtle/nora_25"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
 </script>

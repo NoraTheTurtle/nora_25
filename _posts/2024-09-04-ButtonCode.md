@@ -4,6 +4,7 @@ title: Button!
 description: 
 courses: {compsci: {week: 3}}
 type: hacks
+comments: true
 toc: false
 ---
 
@@ -23,3 +24,11 @@ toc: false
     <br>
     <a href="https://img.freepik.com/premium-vector/corn-crying-illustration-character-vector_193274-37612.jpg">Corn Pov</a>
 </div>
+
+ <script src="https://utteranc.es/client.js"
+        repo="NoraTheTurtle/nora_25"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>

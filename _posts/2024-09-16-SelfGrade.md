@@ -4,6 +4,7 @@ title: Self Grade
 description: self grading
 type: hacks
 courses: {compsci: {week: 5}}
+comments: true
 toc: false
 ---
 

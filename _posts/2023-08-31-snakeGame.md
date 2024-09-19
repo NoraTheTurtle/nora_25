@@ -6,7 +6,7 @@ title: Snake Game!
 description: The game with the snake that eats apples
 type: hacks
 courses: { compsci: {week: 4} }
-comments: on
+comments: true
 ---
 
 <style>
@@ -383,4 +383,12 @@ comments: on
             if(wall === 1){screen_snake.style.borderColor = "#fcdd3f";}
         }
     })();
+</script>
+
+<script src="https://utteranc.es/client.js"
+        repo="NoraTheTurtle/nora_25"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
 </script>

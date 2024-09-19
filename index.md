@@ -95,3 +95,11 @@ hide: true
 <img src="images/byeCat.gif" alt="Bye bye cat" class= "center"> 
 
 </body>
+
+<script src="https://utteranc.es/client.js"
+        repo="NoraTheTurtle/nora_25"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
