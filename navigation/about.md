@@ -28,7 +28,7 @@ and here is a photo of me with my sister <3
 ### I took CSSE last year and im supper excited to learn more about coding through CSP this year!
 
 <script src="https://utteranc.es/client.js"
-        repo="NoraTheTurtle/nora_25"
+        repo="nora_25"
         issue-term="pathname"
         theme="github-light"
         crossorigin="anonymous"
