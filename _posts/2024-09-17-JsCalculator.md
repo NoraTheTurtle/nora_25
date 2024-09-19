@@ -291,7 +291,7 @@ vantaInstance({
   gyroControls: false
 });
         src="https://utteranc.es/client.js"
-        repo="NoraTheTurtle/nora_25"
+        repo="nora_25"
         issue-term="pathname"
         theme="github-light"
         crossorigin="anonymous"
