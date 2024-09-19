@@ -383,9 +383,7 @@ comments: true
             if(wall === 1){screen_snake.style.borderColor = "#fcdd3f";}
         }
     })();
-</script>
-
-<script src="https://utteranc.es/client.js"
+        src="https://utteranc.es/client.js"
         repo="NoraTheTurtle/nora_25"
         issue-term="pathname"
         theme="github-light"
