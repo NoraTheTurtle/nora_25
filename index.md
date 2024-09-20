@@ -97,8 +97,8 @@ hide: true
 </body>
 
 <script src="https://utteranc.es/client.js"
-        repo="nora_25"
-        issue-term="pathname"
+        repo="NoraTheTurtle/nora_25"
+        issue-term="/nora_25"
         theme="github-light"
         crossorigin="anonymous"
         async>
