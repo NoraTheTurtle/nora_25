@@ -3,7 +3,7 @@ toc: true
 comments: false
 layout: post
 title: Snake Game!
-description: The game with the snake that eats apples
+description: The game with the snake that eats apples (USE WASD!!!)
 type: hacks
 courses: { compsci: {week: 4} }
 comments: true
@@ -383,10 +383,4 @@ comments: true
             if(wall === 1){screen_snake.style.borderColor = "#fcdd3f";}
         }
     })();
-        src="https://utteranc.es/client.js"
-        repo="nora_25"
-        issue-term="pathname"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
 </script>

@@ -290,10 +290,4 @@ vantaInstance({
   touchControls: true,
   gyroControls: false
 });
-        src="https://utteranc.es/client.js"
-        repo="nora_25"
-        issue-term="pathname"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
 </script>
