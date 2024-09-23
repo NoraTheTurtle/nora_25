@@ -66,27 +66,37 @@ hide: true
 </div>
 
   <div class="grid-container">
-    <div class="grid-item">
+  <div class="grid-item">
+    <a href="https://youtu.be/ZWjR3d0WGBE">
       <img src="images/apple.png" alt="apple">
       <p>Yummy Apple</p>
-    </div>
-    <div class="grid-item">
+    </a>
+  </div>
+  <div class="grid-item">
+    <a href="https://youtu.be/kaIpvamevnc">
       <img src="images/grape.png" alt="grape">
       <p>Delicious Grapes</p>
-    </div>
-    <div class="grid-item">
+    </a>
+  </div>
+  <div class="grid-item">
+    <a href="https://youtu.be/GFaLrFe4w9g">
       <img src="images/orange.png" alt="orange">
       <p>Wow an orange</p>
-    </div>
-    <div class="grid-item">
+    </a>
+  </div>
+  <div class="grid-item">
+    <a href="https://youtu.be/-OmGLzgTa-4">
       <img src="images/cherrys.png" alt="cherry">
       <p>Cherry!</p>
-    </div>
-    <div class="grid-item">
+    </a>
+  </div>
+  <div class="grid-item">
+    <a href="https://youtu.be/V1VFy7S7GEU">
       <img src="images/pear.png" alt="pear">
       <p>Juicy pear</p>
-    </div>
+    </a>
   </div>
+</div>
 <br>
 <br>
 <br>
