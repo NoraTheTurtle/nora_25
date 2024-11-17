@@ -1,19 +1,21 @@
 # CSP course meta data
 Unit1:
   title: sprint 1
-  description:  install tools and created website
+  description:  Install Tools and Create Website
   start: 0
   end: 3
 Unit2:
   title: sprint 2
-  description: student teaching
+  description: student Teaching
   start: 4
   end: 6
 Unit3:
   title: sprint 3  
+  description: Social media Page Project
   start: 7
   end: 12
 Unit4:
   title: sprint 4
+  description: N/A
   start: 13
   end: 20
